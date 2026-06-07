@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #000000;
+}
+
+.app {
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px;
+}
+
+.hero {
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: white;
+
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.525);
+  margin-top: 8px;
+  font-size: .9rem;
+}
+
+.dashboard {
+  background-color: #141515;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 20px;
+}
+
+.notes-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #000000;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.panel-header h2{
+  color:white;
+  font-size: 1.3rem;
+  font-family: monospace;
+}
+
+.panel-header span {
+  background: rgb(198, 198, 198);
+  color: black;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.notes-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: #121111;
+  border: 1px solid #202225;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  transition: .2s;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  border: #f6f6f6 1px dashed;
+}
+
+.note-card h3 {
+  margin-bottom: 10px;
+  color: #f6f6f6;
+}
+
+.note-card p {
+  color: #80868f;
+  line-height: 1.5;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #000;
+  border: 1px solid #202020;
+  color: white;
+}
+
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #121111;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+
+.editor-panel h2 {
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+.editor-panel input,
+.editor-panel textarea {
+  border: 1px  gray;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  background-color: #040404;
+  color:white;
+  font-style: italic;
+}
+
+.editor-panel textarea {
+  height: 180px;
+  resize: none;
+}
+
+.save-btn {
+  background: white;
+  width: fit-content;
+  padding: 12px 24px;
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 10px;
+  border: none;
+}
+
+.line{
+  border: none;
+  height: 2px;
+  background-color: #505051;
+  margin-bottom: 35px;
+}
+
+.heading{
+  color: rgba(128, 128, 128, 0.745);
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+}
